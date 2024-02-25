@@ -33,4 +33,16 @@ public class ProductService {
 
 	}
 
+	public List<Product> getTextFromProduct(String Apple) {
+		
+		List<Product> prods = new ArrayList<>();
+		for(Product product:products) {
+			if(product.getName().contains(Apple)||product.getPlace().contains(Apple)) {
+				prods.add(product);
+			}
+		}
+		return prods;
+		
+	}
+
 }

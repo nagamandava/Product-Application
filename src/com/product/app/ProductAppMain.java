@@ -31,6 +31,15 @@ public class ProductAppMain {
 
 		Product product = products.getProduct("Apple");
 		System.out.println(product);
+		System.out.println("=======================================");
+		System.out.println("a particular text");
+		
+		List<Product> prods =products.getTextFromProduct("Apple");
+		for(Product product1:prods) {
+			System.out.println(product1);
+		}
+		
+		
 
 	}
 
